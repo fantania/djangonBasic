@@ -13,4 +13,4 @@ class Employee(models.Model):
     modified_at = models.DateTimeField(auto_now=True) #Used for the update
 
     def __str__(self):
-        return self.first_name
+        return self.first_name #It will be the employee identifier in the database, but not the pk(employee.id)
